@@ -1,0 +1,16 @@
+/* styles.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #241f1b;
+}
+
+body {
+  background-image: url("/pexels-stephan-seeber-1261728.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
