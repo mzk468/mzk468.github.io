@@ -5,7 +5,7 @@ export interface Project {
   image: string;
 }
 
-const projects: [Project] = [
+const projects: Project[] = [
   {
     name: "Bubble Tea",
     url: "https://zakariya.tech/Bubble-Tea-Random-Picker/",
@@ -23,7 +23,9 @@ const projects: [Project] = [
 export function Projects() {
   return (
     <>
-      <h1 className="text-white">My Projects</h1>
+      <h1 id="projects" className="text-white">
+        My Projects
+      </h1>
 
       <div className=" text-white container text-center">
         <div className="row row-cols-4 align-items-start">
