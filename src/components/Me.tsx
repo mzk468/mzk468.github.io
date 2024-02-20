@@ -105,9 +105,9 @@ export function Me() {
                   color: "white",
                 }}
               >
-                View my projects!
+                Projects Section coming soon!
               </p>
-              <img className="align-bottom" src="/down.png"></img>
+              <img className="align-bottom" src="/down.png" hidden></img>
             </center>
           </a>
         </div>
