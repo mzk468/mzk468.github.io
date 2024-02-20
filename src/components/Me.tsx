@@ -81,15 +81,6 @@ export function Me() {
             />{" "}
             Devpost
           </Button>{" "}
-          <Button marginRight={10} bootstrapClasses="btn-danger" href="/CV.pdf">
-            <img
-              className="align-middle"
-              style={{ width: "2rem", height: "2rem" }}
-              src="/cv.png"
-              alt="cv"
-            />{" "}
-            CV
-          </Button>
         </div>{" "}
         <div style={{ position: "absolute", bottom: 0, marginBottom: 40 }}>
           <a
