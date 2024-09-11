@@ -1,5 +1,5 @@
 import { Me } from "./components/Me";
-import { Projects } from "./components/Projects"; // Import the missing Projects component
+//import { Projects } from "./components/Projects"; // Import the missing Projects component
 
 export default function App() {
   return (
