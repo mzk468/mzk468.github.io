@@ -1,0 +1,10 @@
+.socialButton {
+  padding: 0rem;
+
+  width: 4.5rem;
+  height: 4.5rem;
+
+  border-radius: 2.25rem;
+
+  box-sizing: border-box;
+}
