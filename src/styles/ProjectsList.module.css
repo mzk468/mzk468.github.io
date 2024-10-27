@@ -57,7 +57,7 @@
 .projectCard:hover h2 {
   font-size: 2rem;
   text-underline-offset: 0.25rem;
-  text-decoration: underline wavy 0.15rem;
+  text-decoration: underline wavy 0.2rem;
 }
 
 .projectCard:hover img,
