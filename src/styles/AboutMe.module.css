@@ -10,6 +10,8 @@
 .socialsRow {
   display: flex;
   flex-direction: row;
+
+  margin-top: 2rem;
 }
 
 .socialsRow > *:not(:last-child) {
@@ -19,6 +21,8 @@
 .contentCont {
   display: flex;
   flex-direction: row;
+  align-items: center;
+
   width: 60%;
 
   background-color: var(--fg-color);
@@ -29,11 +33,11 @@
 }
 
 .contentCont > :first-child {
-  margin-right: 6rem;
+  margin-right: 3.5rem;
 }
 
 .descSection > :first-child {
-  margin: 1.5rem 0rem;
+  margin-bottom: 1rem;
 }
 
 .descSection > p {
@@ -46,10 +50,14 @@
   width: 100%;
   padding: 5rem 0rem;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(0rem);
+  transition: transform 0.5s ease;
   cursor: pointer;
 }
 
+.downArrow:hover {
+  transform: translateX(-50%) translateY(2rem);
+}
 .langsPopUp {
   position: relative;
   display: flex;
@@ -92,19 +100,28 @@
   cursor: pointer;
 }
 
+.langsPopUp > div > button > svg {
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.langsPopUp > div > button:hover > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .langsPopUp > div > h1 {
   margin-bottom: 3rem;
 }
 
 .langsPopUp > div > div {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
 .langsSection > div {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.4rem;
 }
 
@@ -132,8 +149,8 @@
 }
 
 .lang:hover p {
-  text-underline-offset: 0.25rem;
   font-size: 1.5rem;
+  text-underline-offset: 0.25rem;
   text-decoration: underline wavy 0.15rem;
   transition: text-decoration 0.5s ease, color 0.5s ease, font-size 0.5s ease;
 }

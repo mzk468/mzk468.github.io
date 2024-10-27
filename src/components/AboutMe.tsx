@@ -10,6 +10,8 @@ import { useState } from "react";
 export function AboutMe() {
     const [showLangsPopUp, setShowLangsPopUp] = useState(false)
 
+    const scrollToNextSection = () => document.getElementById("Projects")?.scrollIntoView({ behavior: "smooth" })
+
     return (
         <>
             {showLangsPopUp && <LangsPopUp closeButtonOnClick={() => setShowLangsPopUp(false)} />}
@@ -18,11 +20,16 @@ export function AboutMe() {
                     <ProfileImage src={"./me.jpeg"} alt={"Me"} /><div className={css.socialsRow} />
                     <div className={css.descSection}>
                         <H1>About Me</H1>
-                        <P>A recent graduate from&nbsp;
+                        <P>A recent Computer Science and Maths BSc graduate from&nbsp;
                             <a href="https://royalholloway.ac.uk/" target="_blank">RHUL</a>,
                             Full-Stack Software Engineer @ <a href="https://mevitae.com" target="_blank">MeVitae</a>! </P>
-                        <P>Avid hobbyist, plane spotter, trampolinist, hackathons enjoyer and knower of&nbsp;
+                        <P>Avid hobbyist, plane spotter, trampolinist, and knower of&nbsp;
                             <a onClick={() => setShowLangsPopUp(true)}><i>these</i></a> programming languages!</P>
+                        <P>Technology has always been at the peak of my interests, and I love writing code and learning new things!
+                            I also really love Maths and Physics, and have a keen interest in Quantum, and am very interested in getting
+                            into Quantum Computing!</P>
+
+                        <P>I also love attending Hackathons, and even led the running of <a href="https://www.royalhackaway.com/" target="_blank">Royal Hackaway</a> in 2024!</P>
                         <div className={css.socialsRow}>
                             <SocialButton
                                 icon={<LinkedinFill strokeWidth={1} size={32} color={Colors.OffWhite} />}
@@ -37,7 +44,7 @@ export function AboutMe() {
                 </div>
 
 
-                <ChevronDown className={css.downArrow} strokeWidth={5} size={32} color={Colors.White} />
+                <ChevronDown onClick={scrollToNextSection} className={css.downArrow} strokeWidth={5} size={32} color={Colors.White} />
             </div>
         </>
     )

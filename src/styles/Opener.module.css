@@ -33,9 +33,11 @@
   }
 }
 
-.opener .title::before {
-  content: "> ";
+.opener .title svg {
+  transform: translateY(0.6rem);
+  margin-right: 3rem;
   animation: blinkingCursor 1s infinite;
+  text-decoration: none !important;
 }
 
 .downArrow {
@@ -44,6 +46,11 @@
   width: 100%;
   padding: 5rem 0rem;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(0rem);
+  transition: transform 0.5s ease;
   cursor: pointer;
+}
+
+.downArrow:hover {
+  transform: translateX(-50%) translateY(2rem);
 }

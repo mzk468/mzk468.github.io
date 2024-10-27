@@ -3,7 +3,9 @@ body {
   /* Colour scheme vars */
   --bg-color: #17002f;
   --fg-color: #2f005f;
+  --fg-focused-color: #4f009f;
   --fg-border: #fe00fe;
+
   --text-color: #bf9fff;
 
   /* Colours */
@@ -22,4 +24,20 @@ body {
   padding: 0;
 
   background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--fg-color);
+  transition: background-color 0.5s ease;
+  border-radius: 0.325rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  background-color: var(--fg-focused-color);
 }
