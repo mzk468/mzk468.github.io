@@ -10,7 +10,7 @@
 .opener h2,
 .opener h3,
 .opener p {
-  margin-left: 5rem;
+  margin: 0rem 5rem;
   width: 75%;
 }
 
@@ -18,7 +18,7 @@
 .opener h2:not(:last-child),
 .opener h3:not(:last-child),
 .opener p:not(:last-child) {
-  margin-bottom: 5rem;
+  margin-bottom: 5rem !important;
 }
 
 @keyframes blinkingCursor {
