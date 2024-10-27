@@ -1,0 +1,61 @@
+.massiveText,
+.bigText,
+.h1,
+.h2,
+.h3,
+.p {
+  font-family: Akkurat-Mono;
+  color: var(--text-color);
+
+  padding: 0;
+  margin: 0;
+}
+
+.massiveText {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+}
+
+.bigText {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  font-weight: 750;
+}
+
+.h2 {
+  font-size: 1.75rem;
+  font-weight: 750;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 600;
+}
+
+.p {
+  font-size: 1.25rem;
+  letter-spacing: 0.005rem;
+  word-wrap: break-word;
+}
+
+.p a {
+  color: var(--light-blue) !important;
+  cursor: pointer;
+  text-decoration: none;
+  text-underline-offset: 0.25rem;
+  transition: text-decoration 0.5s ease, color 0.5s ease, font-size 0.5s ease;
+}
+
+.p a:hover {
+  color: var(--dark-blue) !important;
+  font-size: 1.5rem;
+  text-decoration: underline wavy 0.15rem;
+}

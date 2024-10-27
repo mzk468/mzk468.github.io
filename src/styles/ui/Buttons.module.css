@@ -1,6 +1,11 @@
 .socialButton {
   padding: 0rem;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
   width: 4.5rem;
   height: 4.5rem;
 

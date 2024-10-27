@@ -1,0 +1,14 @@
+.projectsList {
+  min-height: 100vh;
+  position: relative;
+
+  padding: 15rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.langsSection > div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

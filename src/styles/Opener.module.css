@@ -1,0 +1,49 @@
+.opener {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.opener h1,
+.opener h2,
+.opener h3,
+.opener p {
+  margin-left: 5rem;
+  width: 75%;
+}
+
+.opener h1:not(:last-child),
+.opener h2:not(:last-child),
+.opener h3:not(:last-child),
+.opener p:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+@keyframes blinkingCursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.opener .title::before {
+  content: "> ";
+  animation: blinkingCursor 1s infinite;
+}
+
+.downArrow {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  padding: 5rem 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}

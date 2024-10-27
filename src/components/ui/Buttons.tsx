@@ -7,6 +7,7 @@ export function SocialButton({ url, icon, color }: SocialAccountProps) {
     return (
         <a
             className={css.socialButton} href={url}
+            target="_blank"
             style={{ backgroundColor: color }}
         >
             {typeof (icon) === "string" ? <img src={icon} /> : icon}

@@ -1,0 +1,25 @@
+html,
+body {
+  /* Colour scheme vars */
+  --bg-color: #17002f;
+  --fg-color: #2f005f;
+  --fg-border: #fe00fe;
+  --text-color: #bf9fff;
+
+  /* Colours */
+  --pink: #c100c8;
+  --light-blue: #4fc1ff;
+  --dark-blue: #3f00ff;
+  --yellow: #ffd700;
+  --green: #008f4f;
+  --orange: #ea5c00;
+  --purple: #7f00ff;
+  --red: #c3006a;
+  --off-white: #98d6f8;
+  --white: #bf9fff;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--bg-color);
+}

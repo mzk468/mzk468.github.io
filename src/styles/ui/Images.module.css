@@ -1,0 +1,8 @@
+.profileImage {
+  /* Assume image is always square */
+  --diam: 20rem;
+  width: var(--diam);
+  height: var(--diam);
+
+  border-radius: calc(var(--diam) / 2);
+}
