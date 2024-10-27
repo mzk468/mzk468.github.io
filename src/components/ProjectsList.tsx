@@ -46,7 +46,8 @@ export function ProjectsList({ projects }: { projects: Project[] }) {
 
 function ProjectCard({ project, idx }: { project: Project; idx: number }) {
     return (
-        <div className={css.projectCard}>
+
+        <div className={css.projectCard + " " + idx /* FIX THIS */}>
             {project.thumbSrc ?
                 <img src={project.thumbSrc} alt={`${project.title} Thumbnail`} />
                 :
