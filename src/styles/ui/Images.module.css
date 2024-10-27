@@ -5,4 +5,10 @@
   height: var(--diam);
 
   border-radius: calc(var(--diam) / 2);
+
+  transition: width 0.5s ease, height 0.5s ease, border-radius 0.5s ease;
+}
+
+.profileImage:hover {
+  --diam: 21rem;
 }

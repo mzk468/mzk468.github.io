@@ -51,11 +51,11 @@
 
 .projectCard h2 {
   margin-bottom: 1rem;
+  transition: font-size 0.5s ease, text-decoration 0.5s ease;
 }
 
 .projectCard:hover h2 {
   font-size: 2rem;
-  transition: font-size 0.5s ease, text-decoration 0.5s ease;
   text-underline-offset: 0.25rem;
   text-decoration: underline wavy 0.15rem;
 }
