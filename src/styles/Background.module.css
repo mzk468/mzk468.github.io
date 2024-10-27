@@ -1,0 +1,12 @@
+.canvas {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: calc(100% + 1rem);
+  height: calc(100% + 1rem);
+  z-index: -1;
+  overflow: hidden;
+
+  font-family: AkkuratMono;
+  filter: blur(0.5rem) brightness(0.45);
+}
