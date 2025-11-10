@@ -1,4 +1,4 @@
-import { ChevronDown, Cross, GithubFill, LinkedinFill } from "akar-icons"
+import { ChevronDown, GithubFill, LinkedinFill } from "akar-icons"
 import { SocialButton } from "./ui/Buttons";
 import { Colors } from "./ui/Colors";
 
