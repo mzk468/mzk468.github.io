@@ -47,7 +47,7 @@ export function ProjectsList({ projects }: { projects: Project[] }) {
 function ProjectCard({ project, idx }: { project: Project; idx: number }) {
     return (
 
-        <div className={css.projectCard + " " + idx /* FIX THIS */}>
+        <a className={css.projectCard + " " + idx /* FIX THIS */} href={project.repo} target="_blank">
             {project.thumbSrc ?
                 <img src={project.thumbSrc} alt={`${project.title} Thumbnail`} />
                 :
@@ -58,7 +58,7 @@ function ProjectCard({ project, idx }: { project: Project; idx: number }) {
 
             <H2>{project.title}</H2>
             <P>{project.desc}</P>
-        </div>
+        </a>
     )
 }
 
